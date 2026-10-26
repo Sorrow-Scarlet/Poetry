@@ -1,5 +1,7 @@
 # FSharp.Core.Dll
 
+![HeadImage](./About/Preview.png)
+
 A F# Core inspired by [alattalatta/Monoworld](https://github.com/alattalatta/Monoworld/blob/main/Poet).
 
 ## Dev
