@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+		<PublishDir>../1.7/Assemblies</PublishDir>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<PlatformTarget>x64</PlatformTarget>
+		<LangVersion>latest</LangVersion>
+
+		<!-- Modify RootNamespace, AssemblyName, OutputPath, VersionPrefix -->
+		<RootNamespace>Poetry</RootNamespace>
+		<AssemblyName>Poetry</AssemblyName>
+		<OutputPath>../1.7/Assemblies</OutputPath>
+		<VersionPrefix>0.1.0.0</VersionPrefix>
+
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<GenerateDependencyFile>false</GenerateDependencyFile>
+		<Optimize>true</Optimize>
+		<DebugType>embedded</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    </PropertyGroup>
+
+    <ItemGroup>
+	 	<Compile Include="../Source/Poetry/Lib.fs" />
+		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.7.*-*" />
+	</ItemGroup>
+
+</Project>
