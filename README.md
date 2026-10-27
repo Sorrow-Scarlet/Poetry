@@ -18,6 +18,13 @@ Release:
 dotnet publish
 ```
 
+Pack:
+
+```bash
+dotnet publish
+dotnet fsi pack.fsx
+```
+
 ## Items
 
 > [!NOTE]
