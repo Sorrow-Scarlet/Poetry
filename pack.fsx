@@ -3,7 +3,7 @@ open System.IO.Compression
 
 let outputName = "artifact.zip"
 let excludedDirs = [| ".vscode"; "Source"; ".git"; ".sharplsp" |]
-let excludeFiles = [| "mod.slnx"; ".gitignore"; "pub.fsx" |]
+let excludeFiles = [| "mod.slnx"; ".gitignore"; "pack.fsx" |]
 
 let shouldExclude (relPath: string) =
     excludedDirs |> Array.contains relPath || excludeFiles |> Array.contains relPath
